@@ -1,0 +1,13 @@
+cat > ~/llmbench/config_gb10.yaml << 'EOF'
+database:
+  type: sqlite
+  sqlite:
+    database: llm_benchmark.db
+
+generation:
+  n_ctx: 2048
+  max_tokens: 512
+  temperature: 0.0
+  n_gpu_layers: -1
+  verbose: false
+EOF
